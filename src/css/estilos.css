@@ -1,0 +1,463 @@
+/* Definimos variables para los colores de textos y fondos */
+:root {
+    --col-gray: rgb(93, 95, 121);
+    --col-white: rgb(255, 255, 255);
+    --col-orange: rgb(245, 157, 35);
+    --col-black: rgb(0,0,0); 
+}
+
+/* Diseño Mobile first */
+/* Elementos comunes */
+html {
+    box-sizing: border-box;
+    color: var(--col-txt-menu);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--col-gray);
+    font-size: 0.8rem;
+}
+
+h1 span {
+    color: var(--col-orange);
+    font-size: 2rem;
+}
+
+h2, h3 {
+    color: var(--col-black);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+a {
+    color: var(--col-orange);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--col-gray);
+}
+
+ul {
+    line-height: 1.5rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Contenedores */
+header {
+    padding-bottom: 1rem;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: var(--col-gray);
+    color: var(--col-white);
+    font-size: 0.8rem;
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+/* Contenido header */
+header .container {
+    text-align: center;
+}
+
+/* Contenido header */
+.logo-link {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 4rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: scale(1.2);
+}
+
+/* Menú de navegación */
+nav a {
+    color: var(--col-gray);
+}
+
+nav a:hover, nav a.menuActivo {
+    color: var(--col-orange);
+}
+
+nav ul {
+    font-weight: 700;
+}
+
+/* Contenido footer */
+footer .container {
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content:  space-evenly;
+    margin-bottom: 3rem;
+}
+
+footer ul li a {
+    color: var(--col-white);
+}
+
+footer ul li a:hover {
+    color: var(--col-orange);
+}
+
+footer img {
+    width: 220px;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+/* Artículo */
+article p {
+    line-height: 1.2rem;
+}
+
+figure {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-size: 0.6rem;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 200px;
+}
+
+/* Inicio */
+
+#imgInicio {
+    background-image: url("../img/fondo1.png");
+    background-size: cover;
+}
+
+#contenidoInicio {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+#contenidoInicio h2 {
+    color: var(--col-orange);
+    text-shadow: 2px 2px black;
+    font-size: 3rem;
+}
+
+#contenidoInicio h3 {
+    color: var(--col-orange);
+    font-size: 1rem;
+    margin: 0;
+    text-shadow: 1px 1px black;
+}
+
+/* Presentación */
+
+@keyframes flotar {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translateY(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translateY(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translateY(0px);
+    }
+}
+  
+.logoAnimado {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translateY(0px);
+    animation: flotar 5s ease-in-out infinite;
+}
+
+.logoAnimado img {
+    width: 100%;
+    height: auto;
+}
+
+#canvasPoblacion {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+}
+
+/* Lugares de interés */
+
+#listaLugares {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+#listaLugares li {
+    margin-top: 2rem;
+}
+
+#listaLugares li a {
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+#listaLugares li img {
+    margin-top: 1rem;
+    width: 80%;
+}
+
+#imgInternas {
+    display: flex;
+    justify-content: space-around;
+}
+  
+@keyframes sacudir {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+#listaLugares img:hover {
+    animation: sacudir 2s linear;
+}
+
+/* Páginas de detalle */
+
+#enlacesLugares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#enlacesLugares li {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+#enlacesLugares li::after {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    content: "·";
+    color: var(--col-orange);
+}
+
+#enlacesLugares li:last-child::after {
+    content: "";
+}
+
+/* Enlaces */
+
+#listaEnlaces ul {
+    list-style-type: disclosure-closed;
+    padding-left: 2rem;
+}
+
+#listaEnlaces ul li a {
+    position: relative;
+    display: inline-block;
+}
+
+#listaEnlaces ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--col-gray);
+    transition: width 0.3s ease-in-out; 
+}
+
+#listaEnlaces ul li a:hover::after {
+    width: 100%;
+}
+
+.enlaceActivo {
+    color: var(--col-gray);
+}
+
+/* Diseño para tablets */
+@media (min-width: 480px) {
+    /* Contenedor principal */
+    .container, .containerEstrecho {
+        max-width: 590px;
+    }
+
+    .logo-img {
+        width: 5rem;
+    }
+
+    /* Elementos comunes */
+    h1 {
+        color: var(--col-gray);
+        font-size: 1.3rem;
+    }
+    
+    h1 span {
+        color: var(--col-orange);
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        margin-bottom: 4rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    figure {
+        margin-bottom: 3rem;
+    }
+
+    iframe {
+        height: 315px;
+    }
+
+    /* Lugares de interés */
+
+    #listaLugares li a {
+        font-size: 1rem;
+    }
+}
+
+/* Diseño para escritorio */
+@media (min-width: 768px) {
+    /* Contenedor principal */
+    .container {
+      max-width: 1140px;
+    }
+
+    /* Contenido header */
+    header .container {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-img {
+        width: 6rem;
+    }
+
+    /* Menú de navegación */
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 1.5rem;
+    }
+
+    iframe {
+        width: 70%;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem;
+    }
+
+    /* Inicio */
+
+    #contenidoInicio h2 {
+        font-size: 5rem;
+    }
+
+    #contenidoInicio h3 {
+        font-size: 1.4rem;
+    }
+
+    #contenidoInicio img {
+        clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        width: 45%;
+    }
+
+    /* Lugares de interés */
+
+    #listaLugares li a {
+        font-size: 1.3rem;
+    }
+}

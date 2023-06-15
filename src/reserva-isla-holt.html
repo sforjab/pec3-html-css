@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Estatua de Oliver Cromwell</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <div class="container">
+        <div>
+          <a href="index.html" class="logo-link">
+            <img src="./img/logo.svg" alt="Logo de St. Ives" class="logo-img">
+            <h1 class="banner" lang="en">
+              <span>St. Ives</span> The Old Riverport
+            </h1>
+          </a>
+        </div>
+          <!-- Menú -->
+          <nav>
+            <ul>
+              <li><a href="presentacion.html">Presentación</a></li>
+              <li><a class="menuActivo" href="lugares-interes.html">Lugares de interés</a></li>
+              <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </nav>
+      </div>
+  </header>
+  
+    <!-- Contenido de la página -->
+    <main class="container">
+      <!-- Artículo -->
+      <article>
+        <ul id="enlacesLugares">
+          <li><a href="puente-medieval.html">Puente medieval</a></li>
+          <li><a href="estatua-oliver-cromwell.html">Estatua de <span lang="en">Oliver Cromwell</span></a></li>
+          <li><a href="museo-norris.html">Museo Norris</a></li>
+          <li><a href="iglesia-parroquial.html">Iglesia Parroquial de Todos los Santos</a></li>
+          <li><a href="ayuntamiento.html">Ayuntamiento de <span lang="en">St. Ives</span></a></li>
+          <li><a class="enlaceActivo" href="reserva-isla-holt.html">Reserva natural de <span lang="en">Holt Island</span></a></li>
+        </ul>
+        <h2 class="textoCentrado">Reserva Natural de <span lang="en">Holt Island</span></h2>
+        <figure>
+          <picture>
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/puente-holt-island-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/puente-holt-island-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/puente-holt-island-800w.webp">
+            <img src="./img/destacadas/jpeg/puente-holt-island.jpeg" alt="Foto de la entrada a la Reserva Natural de Holt Island">
+          </picture>
+          <figcaption>Entrada a la Reserva Natural de <span lang="en">Holt Island</span></figcaption>
+        </figure>
+        <p>
+            <strong>La Reserva Natural de <span lang="en">Holt Island</span></strong>, es un área protegida ubicada en una isla fluvial en el río <span lang="en">Gran Ouse</span>, muy cercana al Museo Norris y a la Iglesia 
+            Parroquial de Todos los Santos. La isla fue originalmente utilizada en la producción de mimbre para la fabricación de cestas. Sin embargo, en la 
+            década de 1970, <strong>la isla fue comprada por el Consejo del Distrito de <span lang="en">Huntingdonshire</span> y se convirtió en un área protegida de la naturaleza</strong>. Desde 
+            entonces, se ha restaurado y se ha permitido que la vegetación natural vuelva a crecer, lo que ha resultado en un hábitat diverso para muchas especies 
+            de animales y plantas.
+        </p>
+        <p>
+            La reserva está <strong>abierta al público</strong> y es un lugar popular para caminar y hacer picnic. También cuenta con una variedad de hábitats, como humedales, 
+            bosques y prados, lo que permite a los visitantes ver una amplia variedad de vida silvestre. Hay varios senderos para caminar por la reserva, 
+            incluyendo un sendero elevado de madera que permite a los visitantes caminar sobre el humedal.
+        </p>
+        <p>
+            En resumen, la Reserva Natural de <span lang="en">Holt Island</span> es un hermoso área protegido en el corazón de <span lang="en">St. Ives</span>, que ofrece una gran oportunidad para 
+            que los visitantes experimenten la vida silvestre de cerca, mientras disfrutan de un agradable paseo o picnic en un entorno 
+            tranquilo y natural.
+        </p>
+        <div id="imgInternas">
+          <figure>
+            <img
+            srcset="./img/internas/holt-island-1-150w.jpeg 150w, ./img/internas/holt-island-1-225w.jpeg 225w, ./img/internas/holt-island-1-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            src="./img/internas/holt-island-1-350w.jpeg"
+            alt="Imagen de una garza" >
+            <figcaption>Imagen de una garza</figcaption>
+          </figure>
+          <figure>
+            <img
+            srcset="./img/internas/holt-island-2-150w.jpeg 150w, ./img/internas/holt-island-2-225w.jpeg 225w, ./img/internas/holt-island-2-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            src="./img/internas/holt-island-2-350w.jpeg"
+            alt="Foto de un zorro" >
+            <figcaption>Foto de un zorro</figcaption>
+          </figure>          
+        </div>
+        <p>En el siguiente vídeo puede realizar un tour express por la reserva:</p>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bURCbzLaXMU" title="Vídeo sobre la Reserva de Holt Island" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <figcaption>Tour express por <span lang="en">Holt Island</span></figcaption>
+        </figure>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="textoCentrado">
+      <ul>
+        <li><a href="presentacion.html">Presentación</a></li>
+        <li><a href="lugares-interes.html">Lugares de interés</a></li>
+        <li><a href="enlaces.html">Enlaces</a></li>
+      </ul>
+      <div>
+        <p>Herramientas HTML y CSS</p>
+        <p>Actividad realizada por Sergio Forja Barriga</p>
+        <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><img src="img/uoc.png" alt="Logo de la UOC"></a>
+      </div>
+    </footer>
+  </body>
+</html>

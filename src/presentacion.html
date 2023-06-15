@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Presentación</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <div class="container">
+        <div>
+          <a href="index.html" class="logo-link">
+            <img src="./img/logo.svg" alt="Logo de St. Ives" class="logo-img">
+            <h1 class="banner" lang="en">
+              <span>St. Ives</span> The Old Riverport
+            </h1>
+          </a>
+        </div>
+          <!-- Menú -->
+          <nav>
+              <ul>
+                <li><a class="menuActivo" href="presentacion.html">Presentación</a></li>
+                <li><a href="lugares-interes.html">Lugares de interés</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+
+    <!-- Contenido de la página -->
+    <main class="container">
+      <!-- Artículo -->
+      <article id="presentacion">
+        <h2>Presentación</h2>
+        <figure><img class="logoAnimado" src="./img/escudo_st_ives.svg" alt="Escudo St. Ives"></figure>
+        <p>
+          <span lang="en">St. Ives</span> es una pintoresca ciudad situada en el Condado en <span lang="en">Cambridgeshire</span>, Inglaterra, 5 millas (8 km) al este de <span>Huntingdon</span> y 
+          12 millas (19 km) al noroeste de <span lang="en">Cambridge</span>. Destaca por su increíble entorno natural y su importante papel comercial en la historia de Inglaterra. Aunque no es
+          una ciudad muy extensa (10,88 km²), su población ha ido creciendo de manera notable durante el último siglo, hasta alcanzar los 16815 habitantes, 
+          como vemos en el siguiente gráfico:
+        </p>
+
+        <div id="canvasPoblacion"><canvas id="myChart"></canvas></div>
+
+        <h3>Historia</h3>
+
+        <p>El municipio se conocía originalmente como <span lang="en">Slepe</span> ("fangoso") en la Inglaterra anglosajona, debido a los pantanos que la rodean. 
+          En el año 1001, un campesino descubrió los restos de Ivo de <span lang="en">Ramsey</span>, un obispo cristiano celta de Cornualles mientras araba un campo. 
+          El descubrimiento llevó a <span lang="en">Eadnoth</span> el Joven, un importante monje y prelado, a fundar la abadía de <span lang="en">Ramsey</span>.
+        </p>
+        <p>
+          La importancia de la abadía de <span lang="en">Ramsey</span> creció durante la Edad Media, llegando a ser la tercera después de <span lang="en">Glastonbury</span> y <span lang="en">St. Alban's</span>. 
+          Su influencia benefició al área cuando <span lang="en">Slepe</span> se convirtió en <span lang="en">St. Ives</span> (debido a Ivo de <span lang="en">Ramsey</span>) y se le otorgó un estatuto para convertirse 
+          en una ciudad comercial, albergando uno de los mercados más grandes del país.
+        </p>
+        <p>Como <span lang="en">St. Ives</span> se fundó a orillas del ancho río <span lang="en">Great Ouse</span> entre <span lang="en">Huntingdon</span> y <span lang="en">Ely</span>, se había convertido en un importante centro comercial en el este
+          de Inglaterra. El tamaño y la prosperidad de la ciudad medieval todavía se puede ver en el plano de sus calles. Desde el siglo XVII hasta mediados del siglo 
+          XIX, siguió siendo un centro de comercio y navegación. Había posadas y burdeles para atender a los mercaderes, marineros y ganaderos que comerciaban en el 
+          pueblo. Las mercancías se traían a la ciudad en barcazas y el ganado descansaba en los últimos terrenos de engorde antes de enviarse al <span lang="en">Smithfield Market</span> 
+          de Londres. Sin embargo, con la llegada del ramal de <span lang="en">Cambridge</span> y <span lang="en">St. Ives</span> en la década de 1840 y las mejoras en las redes de carreteras locales, el tráfico 
+          comercial en el río <span lang="en">Great Ouse</span> entró en constante declive.
+        </p>
+
+        <h3>Paseo virtual por <span lang="en">St. Ives</span></h3>
+        <p>En el siguiente vídeo, puede dar un paseo por algunos de los puntos más icónicos de esta ciudad:</p>
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VRUxXMWLm9U" title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <figcaption>
+              Paseo virtual por las calles de <span lang="en">St. Ives</span>
+          </figcaption>
+        </figure>
+        
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="textoCentrado">
+      <ul>
+        <li><a href="presentacion.html">Presentación</a></li>
+        <li><a href="lugares-interes.html">Lugares de interés</a></li>
+        <li><a href="enlaces.html">Enlaces</a></li>
+      </ul>
+      <div>
+        <p>Herramientas HTML y CSS</p>
+        <p>Actividad realizada por Sergio Forja Barriga</p>
+        <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><img src="img/uoc.png" alt="Logo de la UOC"></a>
+      </div>
+    </footer>
+
+    <script type="module" src="js/poblacion.js"></script>
+  </body>
+</html>
+     

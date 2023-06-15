@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Museo Norris</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <div class="container">
+        <div>
+          <a href="index.html" class="logo-link">
+            <img src="./img/logo.svg" alt="Logo de St. Ives" class="logo-img">
+            <h1 class="banner" lang="en">
+              <span>St. Ives</span> The Old Riverport
+            </h1>
+          </a>
+        </div>
+          <!-- Menú -->
+          <nav>
+            <ul>
+              <li><a href="presentacion.html">Presentación</a></li>
+              <li><a class="menuActivo" href="lugares-interes.html">Lugares de interés</a></li>
+              <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </nav>
+      </div>
+  </header>
+  
+    <!-- Contenido de la página -->
+    <main class="container">
+      <!-- Artículo -->
+      <article>
+        <ul id="enlacesLugares">
+          <li><a href="puente-medieval.html">Puente medieval</a></li>
+          <li><a href="estatua-oliver-cromwell.html">Estatua de <span lang="en">Oliver Cromwell</span></a></li>
+          <li><a class="enlaceActivo" href="museo-norris.html">Museo Norris</a></li>
+          <li><a href="iglesia-parroquial.html">Iglesia Parroquial de Todos los Santos</a></li>
+          <li><a href="ayuntamiento.html">Ayuntamiento de <span lang="en">St. Ives</span></a></li>
+          <li><a href="reserva-isla-holt.html">Reserva natural de <span lang="en">Holt Island</span></a></li>
+        </ul>
+        <h2 class="textoCentrado">Museo Norris</h2>
+        <figure>
+          <picture>
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/museo-norris-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/museo-norris-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/museo-norris-800w.webp">
+            <img src="./img/destacadas/jpeg/museo-norris.jpeg" alt="Imagen de la fachada principal del Museo Norris">
+          </picture>
+          <figcaption>Fachada principal del Museo Norris</figcaption>
+      </figure>
+        <p>
+            El <strong>Museo Norris</strong> abrió sus puertas en 1933. Su diversa colección original de la historia de <span lang="en">Huntingdonshire</span> fue adquirida con amor durante muchos 
+            años por el historiador aficionado nacido en <span lang="en">St. Ives, <strong>Herbert Norris</strong></span>.
+        </p>
+        <p>
+            El museo y la biblioteca se abrieron en 1933, mostrando muchos tesoros y continuando coleccionándolos y preservándolos para las generaciones 
+            futuras. Las colecciones han crecido de manera constante desde entonces y el museo continúa reuniendo desde dentro de los límites del antiguo 
+            condado. Hay poco más de 33000 artículos.
+        </p>
+        <p>
+            Los edificios del museo, ubicados en un atractivo jardín junto al río, son un activo importante para la ciudad y el área local en sí mismos.
+        </p>
+        <h3 lang="en">Herbert Ellis Norris</h3>
+        <p>
+            <span lang="en">Herbert Ellis Norris</span> nació en <span lang="en">St. Ives</span> en 1859. Los primeros intereses de Herbert fueron la historia natural, particularmente las mariposas, 
+            las polillas y los huevos de aves. También estaba interesado en la fotografía, publicándose en 1886 como fotógrafo de un estudio en <span lang="en">Vine Cottage</span> 
+            y hay muchos ejemplos de sus imágenes en la colección del Museo. Más tarde desarrolló interés en la historia local, investigando, escribiendo 
+            y publicando artículos y libros sobre la historia de <span lang="en">St. Ives</span> y otras partes del condado.
+        </p>
+        <div id="imgInternas">
+          <figure>
+            <img
+            srcset="./img/internas/museo-norris-1-150w.jpeg 150w, ./img/internas/museo-norris-1-225w.jpeg 225w, ./img/internas/museo-norris-1-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            src="./img/internas/museo-norris-1-350w.jpeg"
+            alt="Jardín del museo" >
+            <figcaption>Acceso al museo</figcaption>
+          </figure>
+          <figure>
+            <img
+            srcset="./img/internas/museo-norris-2-150w.jpeg 150w, ./img/internas/museo-norris-2-225w.jpeg 225w, ./img/internas/museo-norris-2-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            src="./img/internas/museo-norris-2-350w.jpeg"
+            alt="Interior del museo" >
+            <figcaption>Interior del museo</figcaption>
+          </figure>          
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="textoCentrado">
+      <ul>
+        <li><a href="presentacion.html">Presentación</a></li>
+        <li><a href="lugares-interes.html">Lugares de interés</a></li>
+        <li><a href="enlaces.html">Enlaces</a></li>
+      </ul>
+      <div>
+        <p>Herramientas HTML y CSS</p>
+        <p>Actividad realizada por Sergio Forja Barriga</p>
+        <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><img src="img/uoc.png" alt="Logo de la UOC"></a>
+      </div>
+    </footer>
+  </body>
+</html>
