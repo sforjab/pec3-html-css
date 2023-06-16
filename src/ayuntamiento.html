@@ -18,7 +18,7 @@
       <div class="container">
         <div>
           <a href="index.html" class="logo-link">
-            <img src="./img/logo.svg" alt="Logo de St. Ives" class="logo-img">
+            <img src="./img/logo.svg" alt="Logo de St. Ives" class="logo-img" loading="lazy">
             <h1 class="banner" lang="en">
               <span>St. Ives</span> The Old Riverport
             </h1>
@@ -50,12 +50,11 @@
         <h2 class="textoCentrado">Ayuntamiento de <span lang="en">St. Ives</span></h2>
         <figure>
           <picture>
-            <source media="(max-width: 480px)" data-srcset="./img/destacadas/webp/ayuntamiento-400w.webp">
-            <source media="(max-width: 768px)" data-srcset="./img/destacadas/webp/ayuntamiento-600w.webp">
-            <source media="(min-width: 769px)" data-srcset="./img/destacadas/webp/ayuntamiento-800w.webp">
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/ayuntamiento-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/ayuntamiento-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/ayuntamiento-800w.webp">
             <img src="./img/destacadas/jpeg/ayuntamiento.jpeg" alt="Imagen del Ayuntamiento de St. Ives" loading="lazy">
           </picture>
-
           <figcaption>Ayuntamiento de St. Ives</figcaption>
       </figure>
         <p>
@@ -82,8 +81,8 @@
         <div id="imgInternas">
           <figure>
             <img
-            data-srcset="./img/internas/ayuntamiento-1-150w.jpeg 150w, ./img/internas/ayuntamiento-1-225w.jpeg 225w, ./img/internas/ayuntamiento-1-350w.jpeg 350w"
-            data-sizes="(max-width: 480px) 150px,
+            srcset="./img/internas/ayuntamiento-1-150w.jpeg 150w, ./img/internas/ayuntamiento-1-225w.jpeg 225w, ./img/internas/ayuntamiento-1-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
                   (max-width: 768px) 225px,
                   350px"
             src="./img/internas/ayuntamiento-1-350w.jpeg"
@@ -93,8 +92,8 @@
           </figure>
           <figure>
             <img
-            data-srcset="./img/internas/ayuntamiento-2-150w.jpeg 150w, ./img/internas/ayuntamiento-2-225w.jpeg 225w, ./img/internas/ayuntamiento-2-350w.jpeg 350w"
-            data-sizes="(max-width: 480px) 150px,
+            srcset="./img/internas/ayuntamiento-2-150w.jpeg 150w, ./img/internas/ayuntamiento-2-225w.jpeg 225w, ./img/internas/ayuntamiento-2-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
                   (max-width: 768px) 225px,
                     350px"
             src="./img/internas/ayuntamiento-2-350w.jpeg"
@@ -116,7 +115,7 @@
       <div>
         <p>Herramientas HTML y CSS</p>
         <p>Actividad realizada por Sergio Forja Barriga</p>
-        <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><img src="img/uoc.png" alt="Logo de la UOC"></a>
+        <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><img src="img/uoc.png" alt="Logo de la UOC" loading="lazy"></a>
       </div>
     </footer>
   </body>
