@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var thumbnailContainer = thumbnail.parentElement;
 
     // Agregamos un evento de clic a la imagen en miniatura
-    thumbnail.addEventListener('click', function() {
+    thumbnailContainer.addEventListener('click', function() {
     // Creamos un nuevo elemento iframe y configuramos sus atributos
     var iframe = document.createElement('iframe');
     iframe.src = "https://www.youtube.com/embed/VRUxXMWLm9U";
