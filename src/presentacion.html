@@ -73,9 +73,13 @@
         <h3>Paseo virtual por <span lang="en">St. Ives</span></h3>
         <p>En el siguiente vídeo, puede dar un paseo por algunos de los puntos más icónicos de esta ciudad:</p>
         <figure>
-         <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/VRUxXMWLm9U" loading="lazy" title="YouTube video player" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-          <img class="thumbnail" src="./img/iframes/paseo_st_ives.webp" alt="Vista previa del video Paseo virtual por las calles de St. Ives">
+          <img 
+            class="thumbnail" 
+            srcset="./img/iframes/paseo_st_ives-400w.webp 400w, ./img/iframes/paseo_st_ives-600w.webp 600w"
+            sizes="(max-width: 480px) 400px,
+                  600px"
+            src="./img/iframes/paseo_st_ives-600w.webp" 
+            alt="Vista previa del video Paseo virtual por las calles de St. Ives">
           <figcaption>
               Paseo virtual por las calles de <span lang="en">St. Ives</span>
           </figcaption>
