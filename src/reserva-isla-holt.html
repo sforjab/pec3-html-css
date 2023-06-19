@@ -100,8 +100,13 @@
         </div>
         <p>En el siguiente vídeo puede realizar un tour express por la reserva:</p>
         <figure>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bURCbzLaXMU" loading="lazy" title="Vídeo sobre la Reserva de Holt Island" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <img 
+            class="thumbnail" 
+            srcset="./img/iframes/reserva-holt-island-400w.webp 400w, ./img/iframes/reserva-holt-island-600w.webp 600w"
+            sizes="(max-width: 480px) 400px,
+                  600px"
+            src="./img/iframes/reserva-holt-island-600w.webp" 
+            alt="Vista previa del video Tour express por Holt Island">
           <figcaption>Tour express por <span lang="en">Holt Island</span></figcaption>
         </figure>
       </article>
@@ -120,5 +125,7 @@
         <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><img src="img/uoc.png" alt="Logo de la UOC" loading="lazy"></a>
       </div>
     </footer>
+
+    <script type="module" src="./js/holt-island_video.js" defer></script>
   </body>
 </html>
