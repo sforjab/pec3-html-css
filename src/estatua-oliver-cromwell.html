@@ -101,8 +101,15 @@
           En el siguiente vídeo, podemos entender un poco más sobre su figura:
         </p>
         <figure>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/a2U0BLgvQfI" loading="lazy" title="Vídeo sobre Oliver Cromwell" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <img
+            class="thumbnail" 
+            srcset="./img/iframes/historia_oliver_cromwell-400w.webp 400w, ./img/iframes/historia_oliver_cromwell-600w.webp 600w"
+            sizes="(max-width: 480px) 400px,
+                  600px"
+            src="./img/iframes/historia_oliver_cromwell-600w.webp" 
+            alt="Vista previa del video La escalofriante historia de Oliver Cromwell, el verdugo de la monarquía inglesa">
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/a2U0BLgvQfI" loading="lazy" title="Vídeo sobre Oliver Cromwell" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
           <figcaption>La escalofriante historia de <span lang="en">Oliver Cromwell</span>, el verdugo de la monarquía inglesa</figcaption>
         </figure>
       </article>
@@ -121,5 +128,7 @@
         <a href="https://www.uoc.edu/portal/es/index.html" target="_blank"><img src="img/uoc.png" alt="Logo de la UOC" loading="lazy"></a>
       </div>
     </footer>
+
+    <script type="module" src="./js/oliver_cromwell_video.js" defer></script>
   </body>
 </html>
