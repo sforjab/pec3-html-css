@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('QUE PASAAAAAAAA')
     // Obtenemos la imagen en miniatura y su contenedor
     var thumbnail = document.querySelector('.thumbnail');
     var thumbnailContainer = thumbnail.parentElement;
